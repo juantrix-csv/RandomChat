@@ -8,6 +8,7 @@ import { Message } from './entities/message.entity';
 import { AdImpression } from './entities/ad-impression.entity';
 import { RetentionModule } from './retention/retention.module';
 import { AuthModule } from './auth/auth.module';
+import { ProfilesModule } from './profiles/profiles.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { AuthModule } from './auth/auth.module';
     HealthModule,
     RetentionModule,
     AuthModule,
+    ProfilesModule,
   ],
 })
 export class AppModule {}
