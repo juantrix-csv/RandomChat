@@ -31,6 +31,9 @@ export class Profile {
   @Column({ type: 'text', nullable: true })
   avatar_url!: string | null;
 
+  @Column({ type: 'boolean', default: false })
+  is_over_18!: boolean;
+
   @CreateDateColumn({ type: 'timestamptz' })
   created_at!: Date;
 

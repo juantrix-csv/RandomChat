@@ -7,6 +7,7 @@ import { Match } from './entities/match.entity';
 import { Message } from './entities/message.entity';
 import { AdImpression } from './entities/ad-impression.entity';
 import { RetentionModule } from './retention/retention.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { RetentionModule } from './retention/retention.module';
     }),
     HealthModule,
     RetentionModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
